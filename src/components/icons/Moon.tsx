@@ -1,7 +1,7 @@
 export default function Moon() {
   return (
     <svg
-      className="w-3.5 inline-block"
+      className="w-3.5 inline-block fill-gray-900"
       stroke="currentColor"
       fill="currentColor"
       strokeWidth="0"

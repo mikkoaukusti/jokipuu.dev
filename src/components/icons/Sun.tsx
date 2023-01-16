@@ -1,7 +1,7 @@
 export default function Sun() {
   return (
     <svg
-      className="w-3.5 inline-block dark:fill-yellow-200"
+      className="w-3.5 inline-block fill-gray-900 dark:fill-yellow-200"
       stroke="currentColor"
       fill="currentColor"
       strokeWidth="0"

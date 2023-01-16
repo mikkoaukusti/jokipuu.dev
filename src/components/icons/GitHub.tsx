@@ -1,7 +1,7 @@
 export default function GitHub() {
   return (
     <svg
-      className="w-3.5 mr-1 inline-block group-hover:fill-gray-400"
+      className="w-3.5 mr-1 inline-block group-hover:fill-gray-400 dark:group-hover:fill-gray-300"
       stroke="currentColor"
       fill="currentColor"
       strokeWidth="0"
