@@ -1,0 +1,21 @@
+---
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Introduction from "@components/Introduction.astro";
+import ProjectItem from "@components/ProjectItem.astro";
+import ProjectLayout from "@layouts/ProjectLayout.astro";
+---
+
+<ProjectLayout>
+  <Header />
+  <section class="grid grid-cols-1 pt-20 md:grid-cols-3">
+    <Introduction />
+    <div class="grid md:col-span-2">
+      <div class="pt-10 md:ml-20 md:pt-0">
+        <span class="text-gray-600 bg-indigo-200 p-2 rounded">Projects</span>
+        <ProjectItem />
+      </div>
+    </div>
+  </section>
+  <Footer />
+</ProjectLayout>

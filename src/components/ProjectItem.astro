@@ -1,0 +1,31 @@
+---
+import { contentfulClient } from "../lib/contentful";
+
+interface ProjectItem {
+  title: string;
+  description: string;
+  technologies: string[];
+}
+
+const entries = await contentfulClient.getEntries<ProjectItem>({
+  content_type: "project",
+});
+---
+
+{
+  entries.items.map((item) => (
+    <div class="flex flex-col py-4 rounded">
+      <span class="flex items-center mb-1 text-lg text-gray-600">
+        {item.fields.title}
+      </span>
+      <span class="text-gray-500 mb-1">{item.fields.description}</span>
+      <div class="flex flex-col py-4 text-center gap-y-1 sm:flex-row sm:gap-x-1">
+        {item.fields.technologies.map((t) => (
+          <span class="inline-block p-1 text-xs border text-gray-600 border-indigo-200 bg-white rounded md:text-sm">
+            {t}
+          </span>
+        ))}
+      </div>
+    </div>
+  ))
+}
