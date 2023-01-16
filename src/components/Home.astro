@@ -1,0 +1,23 @@
+---
+import About from "./About.astro";
+import Introduction from "./Introduction.astro";
+import Timeline from "./Timeline.astro";
+---
+
+<section class="grid grid-cols-1 pt-20 md:grid-cols-3">
+  <Introduction />
+  <div class="grid md:col-span-2">
+    <div class="pt-10 md:ml-20 md:pt-0">
+      <About />
+    </div>
+    <div class="pt-10 md:ml-20">
+      <Timeline />
+    </div>
+    <div class="pt-10 md:ml-20">
+      <span class="text-gray-600 bg-indigo-200 p-2 rounded">I &#10084;</span>
+      <span class="block mt-4 text-gray-500"
+        >Dogs, bodybuilding, nature, anime (アニメ).</span
+      >
+    </div>
+  </div>
+</section>
