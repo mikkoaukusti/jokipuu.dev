@@ -40,7 +40,7 @@ export default function ThemeSwitch() {
   }, []);
 
   return isMounted ? (
-    <div className="inline-flex items-center justify-center p-0.5 rounded-3xl bg-green-200 dark:bg-zinc-600">
+    <div className="inline-flex items-center justify-center p-0.5 rounded-3xl bg-indigo-200 dark:bg-zinc-600">
       {themes.map((t) => {
         const checked = t === theme;
         return (
