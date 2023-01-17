@@ -1,7 +1,8 @@
 ---
-import type { HeadMetaData } from "./MainLayout.astro";
-
 import "@fontsource/quicksand";
+
+import type { HeadMetaData } from "./MainLayout.astro";
+import ThemeHead from "@components/ThemeHead.astro";
 
 const { title = "404 | Mikko", description = "404 - Not Found" } =
   Astro.props as HeadMetaData;
@@ -15,6 +16,7 @@ const { title = "404 | Mikko", description = "404 - Not Found" } =
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <ThemeHead />
   </head>
   <body
     class="bg-[#e5eefe] font-sans antialiased transition-colors duration-500 dark:bg-[#161616]"
