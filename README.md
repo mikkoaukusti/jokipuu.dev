@@ -1,6 +1,6 @@
-# Mikko Jokipuu
+# jokipuu.dev
 
-A page that tells about me, includes my portfolio.
+A multi-page website that tells about me, including my portfolio. [Visit.](https://jokipuu.dev/)
 
 ## Tech Stack
 
@@ -27,6 +27,6 @@ root
     ├── pages
 ```
 
-## Cloning, forking
+## License, cloning
 
-MIT License. Read the license from [here.](https://github.com/mikkoaukusti/blog/blob/main/LICENSE.txt)
+This project is under MIT License. Read the license from [here.](https://github.com/mikkoaukusti/blog/blob/main/LICENSE.txt)
